@@ -1,0 +1,65 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: radial-gradient(circle, rgb(170, 191, 191) 0%, rgb(39, 61, 64) 100%);
+}
+
+h3{
+    text-align: center;
+    color: #b3ecf2;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+
+.profile-card {
+    width: 500px;
+    background: #2b3640 !important;
+    border: 1px solid #2b3640;
+    border-radius: 20px !important;
+    box-shadow:  -10px -10px 50px #d8e8f2, 15px 15px 50px #273d40;
+    padding: 35px;
+}
+
+.table {
+    color: #b3ecf2;
+
+}
+
+.card-footer{
+    color: #b3ecf2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 66px;
+}
+.btn-grad {
+    background: #f29494;
+    border: 0 solid #f29494;
+    border-radius: 10px;
+    color: rgb(48, 84, 115);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: grab;
+}
+
+.btn-grad:hover {
+    background-color: #305473;
+    color: #f29494;
+}

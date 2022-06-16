@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signup.css">
+    <link rel='stylesheet' href="../bootstrap/dist/css/bootstrap.min.css">
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container-fluid wrapper">
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3 sign-up-card">
+                <div class="card-header">
+                    <h3>Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="firstName" required type="text" class="form-control" placeholder="First Name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="lastName" required type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input id="email" required autocomplete="email" type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input id="password" required type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col form-floating mb-3">
+                                <select class="form-select" id="sex" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="sex">&nbsp;&nbsp;&nbsp;Sex</label>
+                            </div>
+
+                            <div class="col form-floating mb-3">
+                                <input type="date" class="form-control" id="birth_date" required>
+                                <label for="birth_date">&nbsp;&nbsp;&nbsp;Date of Birth:</label>
+                            </div>
+                        </div>
+
+                        <div class="card-footer text-center">
+                            <div class="col">
+                                <button id="sign_up_btn" class="btn-grad">Sign Up</button>
+                                <a href="../main/index.html" id="redirect_link"></a>
+                            </div>
+                            <div class="col form-floating mb-3">
+                                Already have account? <a class="signin" href="../sign%20in">Sign In</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>

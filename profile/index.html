@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = 'stylesheet' href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Your Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container-fluid wrapper">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3 profile-card">
+                    <div class="card-header text-white">
+                        <h3>User Profile</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="#">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>First Name</td>
+                                    <td id="firstName"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Last Name</td>
+                                    <td id="lastName"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Email</td>
+                                    <td id="email">
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Sex</td>
+                                    <td id="sex"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Date of Birth</td>
+                                    <td id="birthDate"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a href="../about"><button class="btn-grad" id="log_out_btn">Log Out</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel = 'stylesheet' href="../bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="my-account-redirect text-end">
+  <a href="../profile"><button id="profile_btn" class="btn-grad">Profile</button></a>
+</div>
+<div class="container-fluid wrapper">
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3 description-card">
+                <div class="card-header">
+                    <h3>The Batman</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="batman"></div>
+                        </div>
+                        <div class="col">
+                            <div class="text mb-3">
+                                Batman ventures into Gotham City's underworld when a sadistic killer
+                                leaves behind a trail <span id="dots">...</span><span id="more">
+                                of cryptic clues. As the evidence begins to
+                                lead closer to home and the scale of the perpetrator's plans become
+                                clear, he must forge new relationships, unmask the culprit and bring
+                                justice to the abuse of power and corruption that has long plagued the
+                                metropolis.</span>
+                                <button onclick="readMore()" class="more" id="readMore">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readMore");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</body>
+</html>
